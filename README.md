@@ -26,6 +26,10 @@
 ### Dica:
 - Quando estiver mexendo com Imagens, procure sempre aquelas que tenham as mesmas proporções.
 ### > Exemplo:
--720x720
-Ou
--1290x1290SS
+- 720x720
+
+  Ou
+- 1290x1290SS
+
+## Gostou e quer ver o Projeto? Acesse o Link Abaixo:
+- https://fernandokuwahara.github.io/Card_de_Perfil_CSS/
