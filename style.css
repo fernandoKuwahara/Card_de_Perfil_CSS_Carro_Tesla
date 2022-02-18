@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(135deg, #5c5c5c, black);
+}
+
+.container{
+    position: relative;
+}
+
+.container .card{
+    position: relative;
+    height: 200px;
+    width: 300px;
+    border: 2px solid white;
+    overflow: hidden;
+    box-shadow: 0 5px 20px #969595b4;
+    border-radius: 20px;
+    background: linear-gradient(135deg,blue, black);
+    transition: 0.5s;
+}
+
+.container .card::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    clip-path: circle(350px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover{
+    height: 350px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.container .card:hover::before{
+    clip-path: circle(300px at 80% -30%);
+}
+
+.container .card .imgBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .imgBox img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px #1b1b1bb0;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover .imgBox{
+    top: 30%;
+    left: 25%;
+    width: 250px;
+}
+
+.container .card:hover .imgBox img{
+    width: 250px;
+}
+
+.container .card .content{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container .card .content .section1{
+    position: absolute;
+    left: 2rem;
+    width: 300px;
+}
+
+.container .card .content .section2{
+    position: absolute;
+    right: 1.5rem;
+    width: 250px;
+}
+
+.container .card .socialMedia{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 175px;
+}
+
+.container .card .socialMedia a{
+    text-decoration: none;
+}
+
+.container .card .socialMedia img{
+    width: 45px;
+    border-radius: 50%;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .socialMedia #github{
+    position: absolute;
+    top: .7rem;
+    right: .9rem;
+    width: 60px;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .socialMedia #reddit{
+    position: absolute;
+    top: 1.2rem;
+    right: 1.4rem;
+    opacity: 0;
+    z-index: 8;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .socialMedia #twitter{
+    position: absolute;
+    top: 1.2rem;
+    right: 1.4rem;
+    opacity: 0;
+    z-index: 7;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .socialMedia #patreon{
+    position: absolute;
+    top: 1.2rem;
+    right: 1.4rem;
+    opacity: 0;
+    z-index: 6;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .socialMedia #youtube{
+    position: absolute;
+    top: 1.2rem;
+    right: 1.4rem;
+    opacity: 0;
+    z-index: 5;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .socialMedia #tiktok{
+    position: absolute;
+    top: 1.2rem;
+    right: 1.4rem;
+    opacity: 0;
+    z-index: 4;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .socialMedia #facebook{
+    position: absolute;
+    top: 1.2rem;
+    right: 1.4rem;
+    opacity: 0;
+    z-index: 3;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .socialMedia #linkedin{
+    position: absolute;
+    top: .7rem;
+    right: .9rem;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card .socialMedia #email{
+    position: absolute;
+    top: .7rem;
+    right: .9rem;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover .socialMedia #github{
+    top: 1rem;
+    right: 1.2rem;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.container .card:hover .socialMedia #reddit{
+    opacity: 1;
+    visibility: visible;
+    top: 6.4rem;
+    right: 1.4rem;
+    transition-delay: 0.7s;
+}
+
+.container .card:hover .socialMedia #patreon{
+    opacity: 1;
+    visibility: visible;
+    top: 4.8rem;
+    right: 6.6rem;
+    transition-delay: 1.3s;
+}
+
+.container .card:hover .socialMedia #linkedin{
+    opacity: 1;
+    visibility: visible;
+    top: .6rem;
+    right: 8rem;
+    transition-delay: 1.3s;
+}
+
+.container .card:hover .socialMedia #twitter{
+    opacity: 1;
+    visibility: visible;
+    top: 8.8rem;
+    right: 5rem;
+    transition-delay: 0.7s;
+}
+
+.container .card:hover .socialMedia #tiktok{
+    opacity: 1;
+    visibility: visible;
+    top: 8rem;
+    right: 10rem;
+    transition-delay: 0.7s;
+}
+
+.container .card:hover .socialMedia #facebook{
+    opacity: 1;
+    visibility: visible;
+    top: 3.6rem;
+    right: 11.6rem;
+    transition-delay: 1s;
+}
+
+.container .card:hover .socialMedia #youtube{
+    opacity: 1;
+    visibility: visible;
+    top: 5.4rem;
+    right: 15.6rem;
+    transition-delay: 0.7s;
+}
+
+.container .card:hover .socialMedia #email{
+    opacity: 1;
+    visibility: visible;
+    top: .6rem;
+    right: 15.4rem;
+    transition-delay: 0.7s;
+}
