@@ -1,4 +1,4 @@
-## Eae, Tudo blz?!
+## Eae, Tudo Beleza?
 
 ### Esse é um Projeto que eu estava fazendo como treinamento e estudo para Front-End, a parte de idéia, como idealizei esse Projeto e seus efeitos, foram referências do vídeo que está logo abaixo, o objetivo principal por fazer esse Projeto é inteiramente para estudo, e demonstração de habilidades, espero que tenha gostado desse Projeto, se curtiu? Manda uma mensagem no LinkedIn!😁✌️
 
