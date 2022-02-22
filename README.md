@@ -32,4 +32,4 @@
 - 1290x1290SS
 
 ## Gostou e quer ver o Projeto? Acesse o Link Abaixo:
-- https://fernandokuwahara.github.io/Card_de_Perfil_CSS/
+- https://fernandokuwahara.github.io/Card_de_Perfil_CSS_Carro_Tesla/
